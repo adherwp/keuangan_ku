@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pengeluaran">
+    <TextView
+        android:id="@+id/labelTambahPengeluaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Pengeluaran"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/red"
+        />
+
+    <TextView
+        android:id="@+id/labelTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/labelTambahPengeluaran"
+        android:text="Tanggal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="21dp"
+        android:textSize="20dp"
+        android:layout_marginVertical="20dp"
+        />
+
+    <EditText
+        android:layout_marginVertical="10dp"
+        android:id="@+id/et_date_pengeluaran"
+        app:layout_constraintTop_toBottomOf="@+id/labelTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="21dp"
+        android:hint="Pilih Tanggal"
+        android:textSize="20dp"
+        android:width="350dp"
+        android:drawableEnd="@drawable/calendar"
+        android:inputType="date"
+        />
+
+    <TextView
+        android:id="@+id/labelNominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nominal:"
+        app:layout_constraintTop_toBottomOf="@+id/et_date_pengeluaran"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="21dp"
+        android:layout_marginVertical="20dp"
+
+        />
+
+    <EditText
+        android:layout_marginVertical="10dp"
+        android:id="@+id/nominal_pengeluaran"
+        app:layout_constraintTop_toBottomOf="@+id/labelNominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="21dp"
+        android:hint="Masukkan Nominal"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:width="350dp"
+        />
+
+    <TextView
+        android:id="@+id/labelKeterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keterangan:"
+        app:layout_constraintTop_toBottomOf="@+id/nominal_pengeluaran"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="21dp"
+        android:layout_marginVertical="20dp"
+        />
+
+    <EditText
+        android:layout_marginVertical="10dp"
+        android:id="@+id/keterangan_pengeluaran"
+        app:layout_constraintTop_toBottomOf="@+id/labelKeterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="21dp"
+        android:textSize="20dp"
+        android:width="350dp"
+        android:inputType="text"
+        android:hint="Masukkan Keterangan"
+        />
+
+    <Button
+        android:id="@+id/btnSimpanPengeluaran"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/keterangan_pengeluaran"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Simpan"
+        />
+
+    <Button
+        android:id="@+id/btnKembaliPengeluaran"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnSimpanPengeluaran"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Kembali"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
